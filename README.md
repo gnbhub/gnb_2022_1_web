@@ -1,4 +1,5 @@
 # gnb_2022_1_web
+## 활동 진행 계획
 | 주차 | 내용 | 자료 |
 |------|------|------|
 | **1주차** | 사전교육 | [사전교육.pdf](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eaf4c8ba-b208-495f-aa2d-0fdfa81304e1/Web_사전교육용.pdf) |
