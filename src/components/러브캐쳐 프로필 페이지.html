@@ -1,0 +1,159 @@
+<html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+        
+  <body>
+      <div class="bigdiv">
+    <h1>프로필 설정</h1>
+    <p>학과</p><input type="text">
+    <p>캠퍼스</p><input type="text" list="캠퍼스">
+    <datalist id="캠퍼스">
+        <option>대구캠퍼스</option>
+        <option>상주캠퍼스</option>
+    </datalist>
+    <p>성별</p><input type="text" list="성별">
+    <datalist id="성별">
+        <option>남</option>
+        <option>여</option>
+    </datalist>
+    <p>나이</p><input type="text" list="나이">
+    <datalist id="나이">
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+    </datalist>
+    <p>키</p><input type="text">
+    <p>몸무게</p><input type="text">
+    <p>본가 지역</p><input><button>우편번호찾기</button>
+    <div>
+        <textarea>상세주소</textarea>
+    </div>
+    <p>카카오톡 아이디</p><input type="text">
+    
+    <h2>자신을 나타내는 단어 고르기!</h2>
+    <ul>
+        <li>선호하는 옷 스타일</li>
+        <div class="but1">
+            <button class="pink">힙한</button>
+            <button class="pink">댄디한</button>
+            <button class="pink">페미닌</button>
+            <button class="pink">아메카지</button>
+            <button class="pink">기타</button>
+        </div>
+        
+        <li>자신을 가장 잘 드러내는 단어는?</li>
+        <div class="but1">
+            <button class="pink">발랄한</button>
+            <button class="pink">재미있는</button>
+            <button class="pink">듬직한</button>
+            <button class="pink">조용한</button>
+            <button class="pink">차분한</button>
+            <button class="pink">기타</button>
+        </div>
+        <li>MBTI</li>
+        <div class="but2">
+            <pre>
+            <button class="pink">ESTP</button><button class="pink">ESFP</button><button class="pink">ENFP</button><button class="pink">ENTP</button>
+            <button class="pink" id="mbti">ESTJ</button><button class="pink" id="mbti">ESFJ</button><button class="pink" id="mbti">ENFJ</button><button class="pink" id="mbti">ENTJ</button>
+            <button class="pink1" id="mbti">ISTJ</button><button class="pink1" id="mbti">ISFJ</button><button class="pink1" id="mbti">INFJ</button><button class="pink1" id="mbti">INTJ</button>
+            <button class="pink1" id="mbti">ISTP</button><button class="pink1" id="mbti">ISFP</button><button class="pink1" id="mbti">INFP</button><button class="pink1" id="mbti">INTP</button>
+            </pre>
+        
+        <button class="save">프로필 저장</button>
+        </div>
+    </ul>
+    </div>
+<style>
+    body {
+                background-color: rgb(255, 189, 189);
+            }
+    h1, h2, p, li {
+        font-family: 'Jua', sans-serif;
+        letter-spacing: 2px;
+        color: rgb(255, 255, 255);
+        white-space: nowrap;
+    }
+    h1, h2 {
+        font-size: 50px;
+    }
+    textarea {
+        width: 20rem;
+        height: 4rem;
+    }
+    p, li {
+        font-size: x-large;
+    }
+    .but1, .but2{
+        padding: 1rem;
+        display: flex;
+    }
+    .but2 {
+        position: absolute;
+        left: 0px;
+    }
+
+    .pink {
+        font-family: 'Jua', sans-serif;
+        white-space: nowrap;
+        height: 4rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        border: none;
+        background-color: rgb(255, 237, 248);
+        color: rgb(255, 90, 175);
+        border-radius: 10px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .pink1 {
+        font-family: 'Jua', sans-serif;
+        white-space: nowrap;
+        height: 4rem;
+        padding-left: 3rem;
+        padding-right: 3.35rem;
+        border: none;
+        background-color: rgb(255, 237, 248);
+        color: rgb(255, 90, 175);
+        border-radius: 10px;
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    #mbti {
+        margin-top: 1rem;
+    }
+    .bigdiv {
+        position: relative;
+        left: 2rem;
+        top: 2rem;
+        bottom: 2rem;
+    }
+    .save {
+        font-family: 'Jua', sans-serif;
+        white-space: nowrap;
+        height: 4rem;
+        padding-left: 3rem;
+        padding-right: 3.35rem;
+        border: none;
+        background-color: rgb(255, 90, 175);
+        color: rgb(255, 237, 248);
+        border-radius: 10px;
+        margin-right: 15px;
+        font-size: 20px;
+        position: relative;
+        top: 25rem;
+        left: -3rem;
+        margin-bottom: 30rem;
+    }
+
+</style>
+
+</body>
+</html>
