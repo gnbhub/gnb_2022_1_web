@@ -63,32 +63,22 @@
         </div>
         <li>MBTI</li>
         <div class="but2">
-            <table>
-            <tr>
-            <td><button class="pink">ESTP</button></td>
-            <td><button class="pink">ESFP</button></td>
-            <td><button class="pink">ENFP</button></td>
-            <td><button class="pink">ENTP</button></td>
-            </tr>
-            <tr>
-            <td><button class="pink" id="mbti">ESTJ</button></td>
-            <td><button class="pink" id="mbti">ESFJ</button></td>
-            <td><button class="pink" id="mbti">ENFJ</button></td>
-            <td><button class="pink" id="mbti">ENTJ</button></td>
-            </tr>
-            <tr>
-            <td><button class="pink1" id="mbti">ISTJ</button></td>
-            <td><button class="pink1" id="mbti">ISFJ</button></td>
-            <td><button class="pink1" id="mbti">INFJ</button></td>
-            <td><button class="pink1" id="mbti">INTJ</button></td>
-            </tr>
-            <tr>
-            <td><button class="pink1" id="mbti">ISTP</button></td>
-            <td><button class="pink1" id="mbti">ISFP</button></td>
-            <td><button class="pink1" id="mbti">INFP</button></td>
-            <td><button class="pink1" id="mbti">INTP</button></td>
-            </tr>
-        </table>
+            <button class="pink">ESTP</button>
+            <button class="pink">ESFP</button>
+            <button class="pink">ENFP</button>
+            <button class="pink">ENTP</button>                        
+            <button class="pink" id="mbti">ESTJ</button>
+            <button class="pink" id="mbti">ESFJ</button>
+            <button class="pink" id="mbti">ENFJ</button>
+            <button class="pink" id="mbti">ENTJ</button>                       
+            <button class="pink1" id="mbti">ISTJ</button>
+            <button class="pink1" id="mbti">ISFJ</button>
+            <button class="pink1" id="mbti">INFJ</button>
+            <button class="pink1" id="mbti">INTJ</button>            
+            <button class="pink1" id="mbti">ISTP</button>
+            <button class="pink1" id="mbti">ISFP</button>
+            <button class="pink1" id="mbti">INFP</button>
+            <button class="pink1" id="mbti">INTP</button>
         </div>
     </ul>
     <div class="savediv">
@@ -101,6 +91,7 @@
 @media screen and (min-width: 0px) {
     * {
         -webkit-text-size-adjust:none;
+        
     }
     body {
             background-color: rgb(238, 70, 132);
@@ -111,13 +102,14 @@
         font-family: 'Jua', sans-serif;
         letter-spacing: 2px;
         color: rgb(255, 255, 255);
-        white-space: nowrap;
+        white-space: wrap;
+        word-break: keep-all;
     }
     h1, h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
     textarea {
-        width: 20rem;
+        width: 80vw;
         height: 4rem;
     }
     p, li {
@@ -126,39 +118,47 @@
     .but1, .but2{
         padding: 1rem;
         display: flex;
+        flex-wrap: wrap;
+    }
+    .but2 {
+        width: 70vw;
     }
 
     .pink {
         font-family: 'Jua', sans-serif;
         white-space: nowrap;
-        height: 4rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        
+        height: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         border: none;
         background-color: rgb(255, 237, 248);
         color: rgb(255, 90, 175);
         border-radius: 10px;
         margin-right: 15px;
+        margin-top: 5px;
         font-size: 20px;
-        display: block;
+        
     }
     .pink1 {
         font-family: 'Jua', sans-serif;
         white-space: nowrap;
-        height: 4rem;
-        padding-left: 3rem;
-        padding-right: 3.35rem;
+        height: 2rem;
+        padding-left: 2rem;
+        padding-right: 2.35rem;
         border: none;
         background-color: rgb(255, 237, 248);
         color: rgb(255, 90, 175);
         border-radius: 10px;
         margin-right: 15px;
+        margin-top: 5px;
         font-size: 20px;
+        
     }
     
     .bigdiv {
         position: relative;
-        left: 2rem;
+        
         top: 2rem;
         bottom: 2rem;
     }
@@ -172,7 +172,7 @@
         background-color: rgb(255, 90, 175);
         color: rgb(255, 237, 248);
         border-radius: 10px;
-        
+        margin-bottom: 30px;
         font-size: 20px;
         
         
@@ -181,6 +181,7 @@
         display: flex;
         justify-content: center;
         align-items: center; 
+        border-bottom: 30%;
     }
 }
 @media screen and (min-width: 900px) {
